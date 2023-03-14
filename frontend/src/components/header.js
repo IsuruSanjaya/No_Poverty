@@ -20,7 +20,6 @@ import {
 import Header_bar from "./header_bar"
 import Home from "../pages/AdminDashboard/Admin_dashboard"
 import Financial from "./financial"
-import AllEvent from "./eventManagement/Admin/allEventDetails"
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -43,7 +42,7 @@ const Dashboard = props => {
         getItem("Dashboard", 0, <BankTwoTone />),
         getItem("Donation", 1, <UserOutlined />),
         getItem("Job Portal", 2, <CarFilled />),
-        getItem("Event", 3, <LineChartOutlined />),
+        getItem("Add Donation Content", 3, <LineChartOutlined />),
         getItem("Financial", 4, <LineChartOutlined />),
 
     ]
@@ -55,7 +54,6 @@ const Dashboard = props => {
 
         <Home />,
         <Financial />,
-        <AllEvent />
         // <DeliveryOrder />,
         // <SalesOrder />,
         // <PurchaseOrder />,
