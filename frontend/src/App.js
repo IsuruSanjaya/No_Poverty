@@ -4,11 +4,27 @@ import Header from './components/header';
 import Header_bar from './components/header_bar';
 import AddFinancial from './components/financial/AddFinancial';
 
+import EventHome from './components/eventManagement/Admin/allEventDetails';
+
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+      <body className="mainbody">
       <Header />
-    </div>
+
+        <main className="mainbg">
+          <Routes>
+{/*       
+      =================Sahan=================== */}
+
+      <Route path="/allEvent" element={<EventHome />} />
+{/* 
+      =================Sahan=================== */}
+          </Routes>
+      </main>
+
+      </body>
+    </BrowserRouter>
   );
 }
 
